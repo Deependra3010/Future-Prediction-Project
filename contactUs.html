@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tourism Sector Future Prediction</title>
     <link rel="stylesheet" href="./css/main.css">
-
+    <link rel="stylesheet" href="./css/prediction.css">
+    <link rel="stylesheet" href="./css/contactUs.css">
 </head>
 
 <body>
@@ -19,8 +20,8 @@
             <img src="./images/logo.jpg" class="logo" alt="">
             <div class="nav">
                 <a href="index.html">
-                    <div class="navLinks active">
-                        <img src="./images/homeIcon.svg" style="color:white" alt="">
+                    <div class="navLinks">
+                        <img src="./images/homeIconDark.svg" style="color:white" alt="">
                         <div>Home</div>
                     </div>
                 </a>
@@ -40,25 +41,38 @@
                 </a>
 
                 <a href="contactUs.html">
-                    <div class="navLinks">
-                        <img src="./images/contactUsIcon.svg" style="color:white" alt="">
+                    <div class="navLinks active">
+                        <img src="./images/contactUsIconLight.svg" style="color:white" alt="">
                         <div>Contact Us</div>
                     </div>
                 </a>
             </div>
         </div>
-        <div class="rightSide displayNoneToggle">
+        <div class="predictionRightSide displayNoneToggle">
             <div>
-                <div class="mainText">
-                    Let's Jump Into The <br> World Of Prediction
+                <h1>Contact Us</h1>
+                <div class="outerClass">
+                    <div class="contactUs">
+                        <label for="name" class="contacUsLabels">Your Name</label>
+                        <input type="text" id="name" placeholder="Name">
+
+                        <label for="email" class="contacUsLabels">Your Email</label>
+                        <input type="email" id="email" placeholder="abc@gmail.com">
+
+                        <label for="number" class="contacUsLabels">Phone no.</label>
+                        <input type="number" id="number" placeholder="+91 987654321">
+
+                        <label for="message" class="contacUsLabels">Message</label>
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+
+                        <button class="predictBtn">Send</button>
+                    </div>
                 </div>
-                <div class="button"><img src="./images/plane.svg" height="40px" alt=""></div>
             </div>
         </div>
     </div>
 
-    <script src="./js/script.js"></script>
-
+    <script src="./js/prediction.js"></script>
 </body>
 
 </html>

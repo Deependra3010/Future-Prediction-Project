@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Inter+Tight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Epilogue&family=Inter+Tight&display=swap');
 
 * {
     margin: 0;
@@ -79,6 +79,11 @@
     height: 50px;
 }
 
+.nav a {
+    text-decoration: none;
+    color: #565E6CFF;
+}
+
 .navLinks.active {
     background-color: #00BDD6;
 }
@@ -104,10 +109,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.rightSide {
     align-items: center;
     background-size: cover;
+    background-image: url('../images/homePageBg.jpg');
     background-repeat: no-repeat;
-    background-image: url('./images/homePageBg.jpg');
 }
 
 .mainText {
@@ -130,6 +138,12 @@
     cursor: pointer;
     background-color: #00bdd68c;
 }
+
+
+
+
+
+
 
 @media screen and (max-width:1300px) {
     .navBar {
@@ -162,6 +176,12 @@
         height: 22px;
     }
 
+    .navBar {
+        /* width: 20%; */
+        /* height: 100vh; */
+        /* transition: 0.5s; */
+    }
+
     .navLinks div {
         font-size: 16px;
     }
@@ -176,6 +196,7 @@
 
     .widhtNoneToggle {
         width: 100% !important;
+        /* display: none; */
     }
 
     .rightSide {
